@@ -54,6 +54,11 @@ for x in text1:
 results_file.close()
 
 '''
+import os
+
+# Open file for saving ping results
+results_file = open("results.txt", "w")
+
 # Empty list to store ip addresses
 ip_list = []
 
