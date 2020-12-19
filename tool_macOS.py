@@ -24,7 +24,7 @@ print(len(ip_list))
 # Loop to ping ip_list and check if device up or down
 # Outputs to results.txt file
 for ip in ip_list:
-    response = os.popen(f"ping {ip} -c 1").read()
+    response = os.popen(f"ping {ip} -c 1").read()  # this is to get output of ping and save it on a variable
     if "1 packets transmitted, 1 packets received, 0.0% packet loss" in response:
         print(f"UP {ip} Ping Successful")
         results_file.write(f"UP {ip} Ping Successful" + "\n")
